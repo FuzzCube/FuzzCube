@@ -1,0 +1,453 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@font-face {
+    font-family: helvetica;
+    src: url(font/helvetica_neau.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #F2F2F2;
+    
+}
+.logo {
+    width: 40px;
+    max-width: 40px;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url(img/mixing_desk_hero_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.nav li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:60%;
+}
+
+
+/* Hero center */
+
+
+.center_logo{
+    width: 40vh;
+}
+
+.logo_center p{
+    color: white;
+    
+}
+
+.logo_center {
+    text-align: center;
+}
+
+.center_block{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote{
+    font-family: "raleway", sans-serif;
+    font-size: 2em;
+}
+
+/* BUTTONS START*/
+
+button{
+    /* color: #313131; */
+    background-color: transparent;
+    border: none;
+    
+}
+
+.buttons{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.button_listen{
+    color: #313131;
+    text-decoration: none;
+    font-family: "raleway", sans-serif;
+    font-size: 1em;
+    padding: 0 20px;
+    color: #313131;
+    padding: 9px 25px;
+    background-color:  #FF9F1C;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button_listen:hover {
+    opacity: 0.5;
+}
+
+
+.button_prices{
+    padding: 4px 20px;
+    border: solid 5px #FF9F1C;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button_prices:hover {
+    opacity: 0.5;
+}
+
+.buttons a {
+    padding: 1em 20px 0;
+}
+/* BUTTONS END*/
+
+
+/* SERVICES START*/
+
+.services{
+    background-color: #FF9F1C;
+    /* height: 100vh; */
+}
+
+.services_box{
+    /* margin: 3em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, bold;
+    color:  #2D4558;
+    font-size: 5em;
+    padding: 2em 0 0.8em 0;
+}
+
+/* SERVICES END */
+
+/* TABS */
+
+.tabs{
+    /* max-width: 1172px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 2px white solid; */
+    margin-bottom: 12em;
+    
+}
+
+.tabs_buttons{
+    display: flex;
+    font-size: 3.15em;
+}
+
+.tabs_btn{
+    opacity: 50%;
+    padding: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    color: #2D4558;
+    outline-style: none;
+}
+
+.tabs_btn:hover{
+    /* color: #3d5e79; */
+    transform: scale(1.02);
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.tabbox_box{
+    display: flex;
+    justify-content: center;
+}
+
+.tabbox_img{
+    background-image: url(img/tabbox.jpeg);
+    width: 20em;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    opacity: 60%;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.tabs_content{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.tabs_content_active{
+    display: block;
+    width: 45em;
+    max-height: 500px;
+    padding: 5em;
+    font-family: helvetica;
+    font-size: 1em;
+}
+
+
+.tab_btn_active{
+    color: #F2F2F2;
+    opacity: 100%;
+    outline-style: none;
+
+}
+/* TABS end */
+
+/* PRICES STARTS */
+
+.prices{
+    /* height: 100vh; */
+    background-color: #DEDEDE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prices h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, bold;
+    color:  #2D4558;
+    font-size: 5em;
+    padding: 2em 0 0.8em 0;
+}
+
+.pricesbox_box{
+    display: flex;
+    /* width: 50em; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12em;
+}
+
+.pricesbox_img{
+    background-image: url(img/tabbox.jpeg);
+    width: 20em;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    opacity: 60%;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.pricesbox_content{
+    width: 45em;
+    background-color: #F2F2F2;
+    height:400px;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.button_contact {
+    padding: 4px 20px;
+    background-color: #FF9F1C;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #2D4558;
+}
+
+.prices a{
+    padding: 0 20px;
+}
+
+
+
+/* PRICES END */
+
+
+/* SAMPLES START */
+    .samples{
+        background-color: #2D4558;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10em 0;
+    }
+
+    .samples h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif, bold;
+        color:  #FF9F1C;
+        font-size: 5em;
+        padding: 0 0 0.8em 0;
+    }
+
+    .samples_box{
+        width: 65em;
+        height: 500px;
+        background-color: rgba(250,250,250,0.2);
+        /* margin-bottom: 8em; */
+    }
+
+
+    /* PLAYERS START */
+
+    .player_pop{
+        width:300px;
+        height: 50px;
+        background-color:rgba(250,250,250,0.5);
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .btn_play {
+        transform: scale(0.15);
+        position: absolute;
+        top: -130px;
+        left: -180px;
+    }
+
+    .pop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-content: center; */
+    }
+
+    /* PLAYERS END */
+
+
+/* SAMPLES END */
+
+
+/* ABOUT START */
+
+    .about{
+        /* height:100vh; */
+        background-color: #FF9F1C;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10em 0;
+    }
+
+    .about h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif, bold;
+        color:  #2D4558;
+        font-size: 5em;
+        padding: 0 0 0.8em 0;
+    }
+
+    .about_box{
+        width: 65em;
+        height: 400px;
+        background-color: rgba(250, 250, 250, 0.5);
+        
+    }
+
+    .about img{
+        background-image: url(img/tabbox.jpeg);
+        width: 25em;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        /* opacity: 60%; */
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    }
+
+/* ABOUT START */
+
+/* TESTEMONIALS START */
+
+.test{
+    height: 100vh;
+    background-color: #DEDEDE;
+    padding: 10em 0;
+}
+
+.test h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, bold;
+    color:  #FF9F1C;
+    font-size: 5em;
+    padding: 0 0 0.8em 0;
+}
+
+/* TESTEMONIALS END */
+
+/* <!-- CONTACTS STARTS --> */
+
+.contacts h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, bold;
+    color:  #FF9F1C;
+    font-size: 5em;
+    padding: 0 0 0.8em 0;
+
+}
+
+    .contacts{
+        height: 100vh;
+        background-color: #2D4558;
+        padding: 10em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* <!-- CONTACTS END --> */
+
+/* FOOTER START */
+    .footer{
+        background-color: #FF9F1C;
+        height: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer p{
+        color: #2D4558;
+        font-family: helvetica;
+        font-size: 1.2em;
+    }
+
+/* FOOTER END */
